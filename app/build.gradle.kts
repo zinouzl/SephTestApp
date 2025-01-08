@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "io.seph.test"
-    compileSdk = 35
+    namespace = AppConfig.App.applicationId
+    compileSdk = AppConfig.Sdk.compile
 
     defaultConfig {
-        applicationId = "io.seph.test"
-        minSdk = 24
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = AppConfig.App.applicationId
+        minSdk = AppConfig.Sdk.min
+        targetSdk = AppConfig.Sdk.target
+        versionCode = AppConfig.App.versionCode
+        versionName = AppConfig.App.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -27,11 +27,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = AppConfig.App.javaVersion
+        targetCompatibility = AppConfig.App.javaVersion
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = AppConfig.App.javaVersionName
     }
 }
 
