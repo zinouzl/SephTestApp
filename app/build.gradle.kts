@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = AppConfig.App.applicationId
-    compileSdk = AppConfig.Sdk.compile
+    namespace = AppConfig.App.APPLICATION_ID
+    compileSdk = AppConfig.Sdk.COMPILE
 
     defaultConfig {
-        applicationId = AppConfig.App.applicationId
-        minSdk = AppConfig.Sdk.min
-        targetSdk = AppConfig.Sdk.target
-        versionCode = AppConfig.App.versionCode
-        versionName = AppConfig.App.versionName
+        applicationId = AppConfig.App.APPLICATION_ID
+        minSdk = AppConfig.Sdk.MIN
+        targetSdk = AppConfig.Sdk.TARGET
+        versionCode = AppConfig.App.VERSION_CODE
+        versionName = AppConfig.App.VERSION_NAME
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -31,7 +31,7 @@ android {
         targetCompatibility = AppConfig.App.javaVersion
     }
     kotlinOptions {
-        jvmTarget = AppConfig.App.javaVersionName
+        jvmTarget = AppConfig.App.JAVA_VERSION_NAME
     }
 }
 

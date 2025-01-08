@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace = "io.seph.data"
-    compileSdk = AppConfig.Sdk.compile
+    compileSdk = AppConfig.Sdk.COMPILE
 
     defaultConfig {
-        minSdk = AppConfig.Sdk.min
+        minSdk = AppConfig.Sdk.MIN
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -28,7 +28,7 @@ android {
         targetCompatibility = AppConfig.App.javaVersion
     }
     kotlinOptions {
-        jvmTarget = AppConfig.App.javaVersionName
+        jvmTarget = AppConfig.App.JAVA_VERSION_NAME
     }
 }
 
