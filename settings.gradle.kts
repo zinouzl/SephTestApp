@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "SephTestApp"
 include(":app")
+include(":data")
