@@ -37,6 +37,11 @@ android {
 
 dependencies {
 
+    // modules dependencies
+    implementation(project(AppConfig.Modules.DATA))
+    implementation(project(AppConfig.Modules.DOMAIN))
+    implementation(project(AppConfig.Modules.PRESENTATION))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

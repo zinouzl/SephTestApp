@@ -35,6 +35,9 @@ android {
 
 dependencies {
 
+    // Domain module
+    implementation(project(AppConfig.Modules.DOMAIN))
+
     //retrofit
     implementation(libs.retrofit)
     implementation(libs.kotlinx.serialization.json)
