@@ -2,6 +2,7 @@ package io.seph.data.entities.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import io.seph.data.entities.ReviewDto
 
 /**
  * Represents a product reviews stored locally in the database.
@@ -18,5 +19,5 @@ import androidx.room.PrimaryKey
 @Entity
 internal data class ProductReviewLocalEntity(
     @PrimaryKey val productId: Long,
-    val reviews: String
+    val reviews: List<ReviewDto>
 ) : LocalEntity
