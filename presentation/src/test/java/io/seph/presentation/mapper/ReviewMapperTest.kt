@@ -25,13 +25,13 @@ class ReviewMapperTest {
     fun `should map ReviewModel to Review`() {
         val reviewModel = ReviewModel(
             reviewerName = REVIEW_NAME,
-            reviewText = REVIEW_NAME,
+            reviewText = REVIEW_TEXT,
             reviewRating = REVIEW_RATING_2
         )
 
         val expectedReview = Review(
             reviewerName = REVIEW_NAME,
-            reviewText = REVIEW_NAME,
+            reviewText = REVIEW_TEXT,
             reviewRating = REVIEW_RATING_2
         )
 
