@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
 }
 
@@ -57,4 +58,13 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
+
+    //test
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.koin.test)
+    testImplementation(libs.koin.test.junit4)
+    testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.mockk.jvm)
+    testImplementation(libs.okhttp.mockserver)
 }

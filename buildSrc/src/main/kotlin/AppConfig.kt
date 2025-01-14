@@ -18,4 +18,10 @@ object AppConfig {
         const val JAVA_VERSION_NAME = "17"
     }
 
+    object Modules {
+        const val DATA = ":data"
+        const val DOMAIN = ":domain"
+        const val PRESENTATION = ":presentation"
+    }
+
 }

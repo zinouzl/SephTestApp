@@ -42,6 +42,11 @@ dependencies {
     implementation(project(AppConfig.Modules.DOMAIN))
     implementation(project(AppConfig.Modules.PRESENTATION))
 
+    //koin
+    implementation(platform(libs.koin.bom))
+    implementation(libs.koin.android)
+    implementation(libs.koin.core)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
