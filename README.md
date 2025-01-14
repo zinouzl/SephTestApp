@@ -3,19 +3,6 @@
 
 An Android application built with Clean Architecture principles, showcasing best practices in Android development with a modular approach and robust testing strategy.
 
-<table>
-  <tr>
-    <td><img src="screenshots/launch.png" width=290 height=580></td>
-    <td><img src="screenshots/remote.png" width=290 height=580></td>
-    <td><img src="screenshots/error.png" width=290 height=580></td>
-  </tr>
-   <tr>
-    <td><img src="screenshots/best_to_worst.png" width=290 height=580></td>
-    <td><img src="screenshots/local.png" width=290 height=580></td>
-     <td><img src="screenshots/search.png" width=290 height=580></td>
-  </tr>
- </table>
-
 ## 🏗️ Architecture
 The project follows Clean Architecture with 4 main modules:
 
@@ -45,6 +32,37 @@ The project follows Clean Architecture with 4 main modules:
     └── UI Components
     </code>
 
+<table>
+  <tr>
+    <td><img src="screenshots/launch.png" width=290 height=580></td>
+    <td><img src="screenshots/remote.png" width=290 height=580></td>
+    <td><img src="screenshots/error.png" width=290 height=580></td>
+  </tr>
+   <tr>
+    <td><img src="screenshots/best_to_worst.png" width=290 height=580></td>
+    <td><img src="screenshots/local.png" width=290 height=580></td>
+     <td><img src="screenshots/search.png" width=290 height=580></td>
+  </tr>
+ </table>
+
+##  🔭 Features
+This application provides the following functionality:
+
+#### Product List and Reviews
+- Display a list of products with the ability to expand individual product cards to reveal associated reviews.
+- Show detailed product information.
+
+#### Expandable and Collapsible Product Cards
+- Expand or collapse product cards to view or hide reviews dynamically.
+
+#### Review Sorting
+-	Sort reviews based on rating:
+-	Best to worst (highest rating first).
+-	Worst to best (lowest rating first).
+
+#### Offline Support
+-	Automatically fetch data from the local database when there is no internet connection.
+
 ## 🛠️ Tech Stack
 
 - **Kotlin** - Primary programming language
@@ -61,7 +79,7 @@ The project follows Clean Architecture with 4 main modules:
 - **JUnit** - Unit testing
 - **MockWebServer** - API testing
 
-### Module Details
+## Module Details
 
 #### App Module
 - Application entry point
@@ -87,4 +105,9 @@ The project follows Clean Architecture with 4 main modules:
 - Fragments
 - Custom views and UI utilities
 - Glide image loading
+
+## 💻 Contact me
+
+If you have any questions, please feel free to reach out to me at:
+[zine.latioui.aws@gmail.com](mailto:zine.latioui.aws@gmail.com)
   
