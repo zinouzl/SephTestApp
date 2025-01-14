@@ -46,7 +46,7 @@ The project follows Clean Architecture with 4 main modules:
  </table>
 
 ##  🔭 Features
-This application provides the following functionality:
+This application provides the following functionalities:
 
 #### Product List and Reviews
 - Display a list of products with the ability to expand individual product cards to reveal associated reviews.
@@ -54,6 +54,9 @@ This application provides the following functionality:
 
 #### Expandable and Collapsible Product Cards
 - Expand or collapse product cards to view or hide reviews dynamically.
+
+#### Search Products by Name
+- Quickly find specific products by searching their name or brand name.
 
 #### Review Sorting
 -	Sort reviews based on rating:
