@@ -61,11 +61,9 @@ internal class ProductsViewModel(
      *
      * This function gets product data, handles loading, errors, and whether the data came from the local data base or the server.
      *
-     * @param isRefresh This is not currently used, but could be used to force a refresh from the server in the future.
-     *
      * @see FetchProductsWithReviewsUseCase
      */
-    fun fetchProducts(isRefresh: Boolean = false) {
+    fun fetchProducts() {
         viewModelScope.launch {
             isLoading.update { true }
             isInError.update { false }
